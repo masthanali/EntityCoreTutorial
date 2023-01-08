@@ -6,7 +6,11 @@ Postgresql tutorial
 https://www.postgresqltutorial.com/postgresql-indexes/postgresql-create-index/
 
 First Time
+
+Package Manager Console
 PM> Scaffold-DbContext "Server=localhost;Port=5432;Database=alwebiee;User Id=postgres;Password=pgadmin;" Npgsql.EntityFrameworkCore.PostgreSQL -OutputDir Models
 
 Second Time
+
+Package Manager Console
 PM> Scaffold-DbContext "Server=localhost;Port=5432;Database=alwebiee;User Id=postgres;Password=pgadmin;" Npgsql.EntityFrameworkCore.PostgreSQL -OutputDir Models -force
