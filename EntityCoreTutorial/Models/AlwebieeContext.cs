@@ -31,6 +31,8 @@ public partial class AlwebieeContext : DbContext
 
             entity.ToTable("accounts");
 
+            entity.HasIndex(e => e.Emailid, "idx_emailid");
+
             entity.Property(e => e.Id)
                 .ValueGeneratedNever()
                 .HasColumnName("id");
@@ -40,6 +42,9 @@ public partial class AlwebieeContext : DbContext
             entity.Property(e => e.Emailid)
                 .HasMaxLength(500)
                 .HasColumnName("emailid");
+            entity.Property(e => e.Isactive)
+                .HasDefaultValueSql("false")
+                .HasColumnName("isactive");
             entity.Property(e => e.Isadmin).HasColumnName("isadmin");
             entity.Property(e => e.Name)
                 .HasMaxLength(500)

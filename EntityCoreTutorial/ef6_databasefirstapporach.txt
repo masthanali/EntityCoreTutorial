@@ -1,0 +1,12 @@
+Referr
+Entity Framework
+https://www.entityframeworktutorial.net/efcore/saving-data-in-connected-scenario-in-ef-core.aspx
+
+Postgresql tutorial
+https://www.postgresqltutorial.com/postgresql-indexes/postgresql-create-index/
+
+First Time
+PM> Scaffold-DbContext "Server=localhost;Port=5432;Database=alwebiee;User Id=postgres;Password=pgadmin;" Npgsql.EntityFrameworkCore.PostgreSQL -OutputDir Models
+
+Second Time
+PM> Scaffold-DbContext "Server=localhost;Port=5432;Database=alwebiee;User Id=postgres;Password=pgadmin;" Npgsql.EntityFrameworkCore.PostgreSQL -OutputDir Models -force

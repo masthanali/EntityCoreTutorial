@@ -18,4 +18,6 @@ public partial class Account
     public TimeOnly? Createddate { get; set; }
 
     public TimeOnly? Updatedate { get; set; }
+
+    public bool? Isactive { get; set; }
 }
